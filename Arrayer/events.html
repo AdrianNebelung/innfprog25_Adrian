@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Viktige IT-hendelser</h1>
+    <ul id ="events"></ul>
+
+    <script>
+        let events = [
+            {year: 1969, events: "The creation of ARPANET"},
+            {year: 1971, events: "The first email is sent"},
+            {year: 1981, events: "IBM launches a PC"},
+            {year: 1990, evetns: "Tim Berners Lee launches the first website"},
+            {year: 1998, events: "Google was founded"},
+        ];
+        let eventListHTML = ""; 
+        events.map(item => {
+            eventListHTML += `<li>${item.year}: ${item.event}</li>`;
+        });
+
+        document.getElementById("events").innerHTMl = eventListHTML; 
+    </script>
+</body>
+</html>

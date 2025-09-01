@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Cheat sheet</title>
+</head>
+<body>
+    <h1>Arrayer og metoder</h1>
+    <p>Dette juksearket fungerer best med konsollen åpen</p>
+    <script>
+        const moviearray = ["Ringenes Herre", "Star Wars Episode 1: Phantom Menace", "Titanic", "Nobody", "John Wick 4", "Howls Moving Castle", "Look Back", "No Country For Old Men", "Don't Mess With the Zohan"]
+
+        //Sorete array alfabetisk A-Å
+        moviearray.sort()
+
+        //Reverserer array
+        moviearray.push("Blink Twice")
+        moviearray.reverse()
+
+        //Fjern en film fra listen
+        moviearray.splice(3, 1)
+        
+        const movieexists = moviearray.includes("Blink Twice")
+        console.log("Finnes Blink Twice?", movieexists)
+
+        console.log(moviearray)
+
+        const numbersarray = [32, 31, 6, 4, 104, 111, 1000]
+
+        //Tall sortert
+        numbersarray.sort (function(a, b) {return b - a})
+
+        //Tall sortert og reversert
+        numbersarray.sort (function(a, b) {return b - a})
+        
+        console.log(numbersarray)
+
+    </script>
+</body>
+</html>

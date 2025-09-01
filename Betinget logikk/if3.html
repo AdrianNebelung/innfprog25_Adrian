@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antall gutter og jenter</title>
+</head>
+<body>
+    <h1>Antall gutter og jenter</h1>
+    <p id="resultat"></p>
+
+    <script>
+        //Variabler med kjønn
+        let barn1 = "gutt";
+        let barn2 = "jente";
+        let barn3 = "gutt";
+
+        //Teller for antall gutter og jenter
+        let antall_gutter = 0;
+        let antall_jenter = 0;
+
+        if (barn1 === "gutt") {
+            antall_gutter++;
+        }  else if (barn1 === "jente") {
+                antall_jenter++;
+            }
+
+        if (barn2 === "gutt") {
+            antall_gutter++;
+        }  else if (barn2 === "jente") {
+                antall_jenter++;
+        }
+
+        if (barn3 === "gutt") {
+            antall_gutter++;
+        }  else if (barn3 === "jente") {
+            antall_jenter++;
+        }
+
+        document.getElementById("result").textContent =`Gutter: ${antall_gutter}, Jenter: ${antall_jenter}`;
+     </script>
+</body>
+</html>

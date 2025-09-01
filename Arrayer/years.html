@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Years</title>
+</head>
+<body>
+    <h1>Historiske årstall</h1>
+    <ul id ="utskrift"></p>
+    
+    <script>
+        let years = [1066, 1564, 1455, 1346, 1215];
+        years.sort = ((a, b) => b -a);
+        console.log (years) = "";
+        let eventHTML = "";
+        years.map(year => {
+            eventHTML += `<li>${year}</li>`;
+        });
+        document.getElementById("events").innerHTMl = eventHTML;
+    </script>
+</body>
+</html>
