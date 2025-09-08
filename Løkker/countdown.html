@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedtelling</title>
+</head>
+<body>
+    <h1>Nedtelling fra 10 til 0</h1>
+    <ul id="nedtelling"></ul>
+<script>
+    let htmlString ="";
+    for (let i = 10; i >= 0; i--) {
+        if (i == 0) {
+                htmlString +=`<li>We have a take-off</li>`;
+        }   else {
+            htmlString += `<li>${i}</li>`;
+        }
+    }    
+    document.getElementById ("nedtelling").innerHTML = htmlString;
+</script>
+</body>
+</html>

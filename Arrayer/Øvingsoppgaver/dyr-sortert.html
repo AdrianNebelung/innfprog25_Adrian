@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyr sotert</title>
+</head>
+<body>
+    <p id = "antall-dyr"></p>
+    <!--Arrayer med 10 ulike dyrearter-->
+    <script>
+        let dyr = ["Tiger", "Løve", "Sjimpanse", "Giraff", "Leopard", "Zebra", "Kenguru", "Panda", "Elefant", "Delfin"];
+
+        dyr.push("Rotte", "Ekorn")
+        
+        dyr.sort();
+
+        const antallDyr = `${dyr.length} dyr i denne listen. ${dyr.join(", ")}.`
+
+        document.getElementById("antall-dyr").innerHTML = antallDyr
+
+        console.log(dyr.length);
+        
+    </script>
+</body>
+</html>

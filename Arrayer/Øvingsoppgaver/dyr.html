@@ -10,12 +10,14 @@
     <!--Arrayer med 10 ulike dyrearter-->
     <script>
         let dyr = "[Tiger, Løve, Sjimpanse, Giraff, Leopard, Zebra, Kenguru, Panda, Elefant, Delfin]";
-        dyr.push("ørn", "bjrøn");
-        dyr.sort();
-        let antallDyr = dyr.length;
-        let tekst = `Antall dyr: ${antallDyr}. ${dyr.join(", ")}`;
-    <!--Skriver ut teksten i <p>-taggen-->
-        document.getElementById("utskrift").innerText = text;
+        
+        console.log (dyr)
+
+        const utskrift = `Her er det listet noen dyr, for eksempel ${dyr[2]} og ${dyr[7]}`
+
+        console.log(utskrift)
+
+        document.getElementById("utskrift").innerHTML
     </script>
 </body>
 </html>

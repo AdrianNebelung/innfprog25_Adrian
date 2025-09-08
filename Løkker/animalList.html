@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id ="animals"></ul>
+    <script>
+        let animals = [
+            "Hund",
+            "Katt",
+            "Hest",
+            "Kanin",
+            "Løve",
+            "Tiger",
+            "Elephant",
+            "Sjiraff",
+            "Bjørn",
+            "Ugle",
+        ];
+        let htmlString = "";
+        for (let i = 0; i < animals.length; i ++) {
+            htmlString += `<li>${animals[i]}</li>`;
+        }
+        document.getElementById("animals").innerHTML = htmlString;
+    </script>
+</body>
+</html>

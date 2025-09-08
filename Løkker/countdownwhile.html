@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedtelling</title>
+</head>
+<body>
+    <h1>Nedtelling fra 10 til 0</h1>
+    <ul id="nedtelling"></ul>
+<script>
+    let htmlString = "";
+    let i = 10;
+
+    while (i >= 0) {
+        if (i === 0) {
+            htmlString += `<li>We have take-off</li>`;
+        } else {
+            htmlString += `<li>${i}</li>`;
+        }
+       i--;
+    }
+    document.getElementById("nedtelling").innerHTML = htmlString;
+</script>
+</body>
+</html>
