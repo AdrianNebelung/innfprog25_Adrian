@@ -23,6 +23,59 @@
         }
         console.log(sum)
 
+        //Gangetabellen
+        let gangetabellen = []
+        for (let n = 1; n <= 10; n++){
+            let row = []
+            for(let i = 1; i <= 10; i++){
+                row.push(n * i)
+            }
+            gangetabellen.push(row)
+        }
+
+           console.log(gangetabellen)
+
+           //Sjekk om tall er deling på X
+           const z = 3
+           const y = 100
+
+           for(let teller = x; teller <= y; teller++) {
+            if(teller / z === 0) {
+                console.log/(`${teller},`)
+            }
+           }
+
+            const months = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desemeber"]
+            
+            const date = {
+                year: new Date ().getFullYear(),
+                month: new Date ().getMonth () +1
+            }
+
+            console.log(date)
+
+            const famObj = [{
+                fName: "Adrian",
+                birthyear: 2003,
+                birthmonth: 6,
+                birthday: 4
+            },
+            {
+                fName: "Frode",
+                birthyear: 1964,
+                birthmonth: 7,
+                birthday: 14
+            }
+        ]
+
+        for(let teller = 0; teller < famObj.length; teller++) {
+            if(date.month <= famObj[teller].birthmonth){
+                console.log(`${famObj[teller].fName} fyller ${date.year - famObk[teller.birthyear]} år i ${months[famObj[teller].birthmonth - 1]}`)
+           } else  {
+            console.log(`${famObj[teller].fName} fylte ${date.year - famObj [teller].birthyear}år i ${months[famObj [teller].birthmonth - 1]}`)
+           }
+        }
+
         //for-in-løkker
         const person = {
             name: "Adrian",
@@ -40,6 +93,15 @@
         numbers.forEach((item) => total += item)
 
         console.log(total)
-    </script>
+
+        //While-løkker
+
+        let teller = 0
+        
+        while(teller <10) {
+            teller++
+            console.log(teller)
+        }
+        </script>
 </body>
 </html>
